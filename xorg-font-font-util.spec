@@ -1,4 +1,4 @@
-# $Rev: 3434 $, $Date: 2005-08-15 12:17:57 $
+# $Rev: 3434 $, $Date: 2005-08-27 17:42:48 $
 #
 Summary:	Font utilities
 Summary(pl):	Narzêdzia czcionek
@@ -13,7 +13,7 @@ URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	xorg-util-util-macros
-BuildRequires:	pkg-config
+BuildRequires:	pkgconfig >= 0.19
 BuildRoot:	%{tmpdir}/font-util-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
