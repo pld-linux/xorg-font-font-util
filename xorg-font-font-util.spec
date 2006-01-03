@@ -1,17 +1,15 @@
 Summary:	Font utilities
 Summary(pl):	Narzêdzia do czcionek
 Name:		xorg-font-font-util
-Version:	0.99.2
+Version:	1.0.0
 Release:	0.1
 License:	BSD
 Group:		X11/Development/Tools
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/font/font-util-%{version}.tar.bz2
-# Source0-md5:	035da3fb58569c21fafc855d0dd3b906
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/font/font-util-%{version}.tar.bz2
+# Source0-md5:	0a537f95ee9d46f9e5b58c1a2c733dd4
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	pkgconfig >= 1:0.19
-BuildRequires:	sed >= 4.0
 BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,14 +22,13 @@ Narzêdzia do czcionek.
 %prep
 %setup -q -n font-util-%{version}
 
-sed -i -e 's:^mapdir.*:mapdir=\"\$datadir/fonts/util\":g' configure.ac
-
 %build
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure
+%configure \
+	--with-mapdir=%{_fontsdir}/util
 
 %{__make}
 
