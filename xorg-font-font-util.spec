@@ -11,6 +11,8 @@ URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	xorg-util-util-macros >= 0.99.2
+Obsoletes:	X11-fonts-utils
+Obsoletes:	XFree86-fonts-utils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
