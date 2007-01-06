@@ -2,7 +2,7 @@ Summary:	Font utilities
 Summary(pl):	Narzêdzia do czcionek
 Name:		xorg-font-font-util
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-util-%{version}.tar.bz2
@@ -11,8 +11,8 @@ URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	xorg-util-util-macros >= 0.99.2
-Obsoletes:	X11-fonts-utils
-Obsoletes:	XFree86-fonts-utils
+Obsoletes:	X11-fonts-utils < 1:7.0.0
+Obsoletes:	XFree86-fonts-utils < 1:7.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
