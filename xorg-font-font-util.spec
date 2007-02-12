@@ -1,5 +1,5 @@
 Summary:	Font utilities
-Summary(pl):	Narzêdzia do czcionek
+Summary(pl.UTF-8):   NarzÄ™dzia do czcionek
 Name:		xorg-font-font-util
 Version:	1.0.1
 Release:	2
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Font utilities.
 
-%description -l pl
-Narzêdzia do czcionek.
+%description -l pl.UTF-8
+NarzÄ™dzia do czcionek.
 
 %prep
 %setup -q -n font-util-%{version}
