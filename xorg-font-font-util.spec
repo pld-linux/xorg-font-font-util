@@ -1,5 +1,5 @@
 Summary:	Font utilities
-Summary(pl.UTF-8):   Narzędzia do czcionek
+Summary(pl.UTF-8):	Narzędzia do czcionek
 Name:		xorg-font-font-util
 Version:	1.0.1
 Release:	2
