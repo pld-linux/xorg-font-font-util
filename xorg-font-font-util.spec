@@ -1,5 +1,5 @@
-Summary:	Font utilities
-Summary(pl.UTF-8):	Narzędzia do czcionek
+Summary:	BDF font utilities (bdftruncate, ucs2any)
+Summary(pl.UTF-8):	Narzędzia do fontów BDF (bdftruncate, ucs2any)
 Name:		xorg-font-font-util
 Version:	1.0.1
 Release:	2
@@ -16,10 +16,16 @@ Obsoletes:	XFree86-fonts-utils < 1:7.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Font utilities.
+BDF font utilities:
+- bdftruncate generates truncated BDF font from ISO 10646-1-encoded
+  BDF font
+- ucs2any generates BDF fonts containing subsets of ISO 10646-1 codepoints
 
 %description -l pl.UTF-8
-Narzędzia do czcionek.
+Narzędzia do fontów BDF:
+- bdftruncate generuje obcięte fonty BDF z fontów BDF w kodowaniu ISO
+  10646-1
+- ucs2any generuje fonty BDF zawierające podzbiory kodów ISO 10646-1
 
 %prep
 %setup -q -n font-util-%{version}
