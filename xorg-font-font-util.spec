@@ -8,9 +8,9 @@ Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-util-%{version}.tar.bz2
 # Source0-md5:	6a56a1a93f2e07f0323db988e4ebfcce
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros >= 1.3
+BuildRequires:	xorg-util-util-macros >= 1.8
 Obsoletes:	X11-fonts-utils < 1:7.0.0
 Obsoletes:	XFree86-fonts-utils < 1:7.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
