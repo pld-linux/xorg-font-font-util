@@ -1,12 +1,12 @@
 Summary:	BDF font utilities (bdftruncate, ucs2any)
 Summary(pl.UTF-8):	Narzędzia do fontów BDF (bdftruncate, ucs2any)
 Name:		xorg-font-font-util
-Version:	1.1.1
+Version:	1.1.2
 Release:	1
 License:	BSD
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-util-%{version}.tar.bz2
-# Source0-md5:	5c735ae6916b65186f3c876d76c27ce3
+# Source0-md5:	6a56a1a93f2e07f0323db988e4ebfcce
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
