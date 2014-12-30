@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/bdftruncate
 %attr(755,root,root) %{_bindir}/ucs2any
 %{_fontsdir}/util
-%{_mandir}/man1/bdftruncate.1x*
-%{_mandir}/man1/ucs2any.1x*
+%{_mandir}/man1/bdftruncate.1*
+%{_mandir}/man1/ucs2any.1*
 %{_aclocaldir}/fontutil.m4
 %{_pkgconfigdir}/fontutil.pc
