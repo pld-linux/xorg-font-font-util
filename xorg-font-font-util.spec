@@ -1,12 +1,12 @@
 Summary:	BDF font utilities (bdftruncate, ucs2any)
 Summary(pl.UTF-8):	Narzędzia do fontów BDF (bdftruncate, ucs2any)
 Name:		xorg-font-font-util
-Version:	1.3.0
-Release:	3
+Version:	1.3.1
+Release:	1
 License:	BSD
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-util-%{version}.tar.bz2
-# Source0-md5:	ddfc8a89d597651408369d940d03d06b
+# Source0-md5:	23756dab809f9ec5011bb27fb2c3c7d6
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
@@ -19,7 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 X.org font package creation/installation utilities:
 - bdftruncate generates truncated BDF font from ISO 10646-1-encoded
   BDF font
-- ucs2any generates BDF fonts containing subsets of ISO 10646-1 codepoints
+- ucs2any generates BDF fonts containing subsets of ISO 10646-1
+  codepoints
 
 %description -l pl.UTF-8
 Narzędzia do tworzenia i instalacji pakietów fontów X.org:
